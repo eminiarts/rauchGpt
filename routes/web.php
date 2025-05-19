@@ -4,6 +4,7 @@ use App\Livewire\Settings\Appearance;
 use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ChatStreamController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -24,5 +25,7 @@ Route::middleware(['auth'])->group(function () {
 Route::get('/chatbot', function () {
     return view('chatbot');
 })->name('chatbot');
+
+Route::post('/api/chat/stream', [ChatStreamController::class, 'stream']);
 
 require __DIR__.'/auth.php';
