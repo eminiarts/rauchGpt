@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" />
 </head>
 
-<body class="bg-gray-100 min-h-screen antialiased">
-    <main class="flex flex-col items-center justify-center">
+<body class="min-h-screen antialiased bg-gradient-to-br from-blue-400 via-fuchsia-100 to-pink-100">
+    <main class="flex flex-col justify-center items-center min-h-screen">
         @yield('content')
     </main>
 </body>
