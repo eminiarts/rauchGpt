@@ -1,4 +1,4 @@
-<div class="w-full h-[90vh] max-w-lg flex flex-col bg-white rounded-lg shadow-lg overflow-hidden"
+<div class="w-full h-[100vh] max-w-lg flex flex-col bg-white rounded-lg shadow-lg overflow-hidden"
      x-data="chatbotStream()"
      x-init="init();
      Livewire.on('messagesUpdated', messages => save(messages));
