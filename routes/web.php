@@ -21,4 +21,8 @@ Route::middleware(['auth'])->group(function () {
     Route::get('settings/appearance', Appearance::class)->name('settings.appearance');
 });
 
+Route::get('/chatbot', function () {
+    return view('chatbot');
+})->name('chatbot');
+
 require __DIR__.'/auth.php';
