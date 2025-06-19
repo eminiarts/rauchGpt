@@ -5,6 +5,7 @@ use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ChatStreamController;
+use App\Http\Controllers\DrMartinStreamController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -27,5 +28,11 @@ Route::get('/chatbot', function () {
 })->name('chatbot');
 
 Route::post('/api/chat/stream', [ChatStreamController::class, 'stream']);
+
+Route::get('/dr-martin', function () {
+    return view('dr-martin');
+})->name('dr-martin');
+
+Route::post('/api/dr-martin/stream', [DrMartinStreamController::class, 'stream']);
 
 require __DIR__.'/auth.php';
