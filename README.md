@@ -6,9 +6,9 @@ This repo was created by Enes Emini and Lirjona Suka, as a simple chatbot interf
 
 The application features different chatbot personalities, each designed for educational purposes:
 
-- **Mia** - A 19-year-old from Ulm who shares her experiences with vaping/e-cigarettes. She provides honest insights about her journey, helping students understand the realities of nicotine addiction.
+- **Mia** - A 19-year-old from Ulm who shares her experiences with vaping/e-cigarettes. She provides honest insights about her journey, helping students understand the realities of nicotine addiction. See her full instructions in [`app/Http/Controllers/ChatStreamController.php`](https://github.com/eminiarts/rauchGpt/blob/main/app/Http/Controllers/ChatStreamController.php).
 
-- **Dr. Martin** - An experienced cardiovascular disease specialist who explains medical topics in an age-appropriate manner for 7th-grade students. She focuses on educating about arteriosclerosis, heart attacks, strokes, and prevention methods.
+- **Dr. Martin** - An experienced cardiovascular disease specialist who explains medical topics in an age-appropriate manner for 7th-grade students. She focuses on educating about arteriosclerosis, heart attacks, strokes, and prevention methods. See her full instructions in [`app/Http/Controllers/DrMartinStreamController.php`](https://github.com/eminiarts/rauchGpt/blob/main/app/Http/Controllers/DrMartinStreamController.php).
 
 ## Key Features
 
@@ -28,7 +28,7 @@ The application features different chatbot personalities, each designed for educ
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/rauchGpt.git
+git clone https://github.com/eminiarts/rauchGpt.git
 cd rauchGpt
 ```
 
